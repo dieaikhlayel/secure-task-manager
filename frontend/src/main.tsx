@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './app/store';
 import App from './App';
+// @ts-expect-error CSS is loaded by the bundler and has no TypeScript declarations.
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
